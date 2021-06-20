@@ -2,3 +2,27 @@
 <header>
     <img src="/images/hiking.jpeg">
 </header>
+
+<ul>
+  <% trails.forEach((trail) => { %>
+  <li class="list-group-item d-flex justify-content-between">
+    <div><%= trail %></div>
+    <div class="links">
+      <button href="/trail/<%= trail._id %>" class="btn btn-info">View Trail</button> 
+      
+      <button href="/update/<%= trail._id %>" class="btn btn-primary">Update Trail</button>  
+     
+      <form action="/delete/<%= trail._id %>/?_method=DELETE" method="POST" class="d-inline">
+          <input type="submit" value="Delete" class="btn btn-danger" />
+      </form>  
+    </div>
+  </li>
+  <% }) %>
+</ul>
+
+<ui  style="display:flex;justify-content: space-around;"><button href='/new'>Add a trail!</button></ui>
+
+
+<head>
+    <ui style="display:flex;justify-content: space-around;"><button href='/'>Home</button></ui>
+</head>

@@ -8,6 +8,11 @@ body{
     position: relative;
     padding: 5%;
 }
+ui,li{
+    
+    padding: 10%;
+    margin: .5rem 0;
+}
 
 header{
     background-color: black;
@@ -36,3 +41,4 @@ footer{
     margin: 4rem 0;
     border-radius: 50%;
 }
+/* @import '~mdb-ui-kit/css/mdb.min.css'; */

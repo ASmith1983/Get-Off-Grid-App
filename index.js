@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const ejsLayouts = require ('express-ejs-layouts')
+const methodOverrride = require('method-override');
 
 const trailController = require('./controllers/trail.js')
 
@@ -10,12 +12,13 @@ app.use(ejsLayouts)
 // set up static files ie, images, css, etc
 app.use(express.static(__dirname + '/public'))
 
-// set up import control
-// const trailController = require('./controllers/trail.js')
-
 // Use middleware to parse the data in the HTTP request body and add
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
+
+app.use(cors())
+
+app.use(methodOverrride('_method'))
 
 app.use('/', trailController)
 

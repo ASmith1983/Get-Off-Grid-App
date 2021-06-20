@@ -1,9 +1,17 @@
 [{
-	"name": "Columbia Plateau Trail - Cheney Trailhead",
-	"parkId": "1",
-	"location": "https://goo.gl/maps/gHGcWQDBqzR2",
-	"difficulty": "1",
-	"length": "10.4",
-	"elevationChange": "416",
-	"routeType": "Point-to-Point"
+	"name": "Mount San Antonio via Baldy Bowl Trail - ",
+	"location": "https://goo.gl/maps/1q7o6JaD2GrKFdb28",
+	"difficulty": "3",
+	"length": "8.8",
+	"elevationChange": "3923",
+	"routeType": "Out and Back"
+},
+
+{
+    "name": "Cali mist Trail - Happy Isles Trailhead",
+    "location": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "difficulty": "5",
+    "length": "7",
+    "elevationChange": "2900",
+    "routeType": "Out and Back"
 }]
