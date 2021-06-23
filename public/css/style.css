@@ -3,15 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 } */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
+
+
 body{
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: 'Merriweather Sans', sans-serif; 
+    color: whitesmoke;
     position: relative;
     padding: 5%;
+    /* min-height: 100vh; */
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%,  #0c0d13 100%);
+ 
 }
-ui,li{
-    
-    padding: 10%;
+ul{
+  display: inline;
+  padding: 3%;
+}
+li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-evenly;
+    padding: 1%;
     margin: .5rem 0;
+    
+}
+img{
+  display: grid;
+  justify-self: center;
+  margin: 0 auto;
+}
+.form-group{
+  display: flex;
 }
 
 header{
@@ -26,7 +51,7 @@ header{
    
 }
 h1{
-    color: navy;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     margin: 4rem 0;
@@ -41,4 +66,130 @@ footer{
     margin: 4rem 0;
     border-radius: 50%;
 }
-/* @import '~mdb-ui-kit/css/mdb.min.css'; */
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+@mixin sp-layout {
+    @media screen and (max-width: 750px) {
+      @content;
+    }
+  }
+
+  
+  /* * {
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+  }
+  .main {
+    padding-right: 5%;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  .d1 {
+    position: absolute;
+    background-image: url(/images/hiking.jpeg);
+    background-size: auto;
+  
+    height: 30vh;
+    width: 15vw;
+  
+    background-position: 0 50%;
+  
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: dd1 10s 1, dd12 10s 1;
+    animation-delay: 4s, 14s;
+  }
+  .d2 {
+    position: absolute;
+    background-image: url(/images/hiking.jpeg);
+    background-size: auto;
+  
+    height: 50vh;
+    width: 25vw;
+  
+    background-position: -10vw 50%;
+    left: 10vw;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd2 10s 2;
+    animation-delay: 4s;
+  }
+  .d3 {
+    position: absolute;
+    background-image: url(/images/hiking.jpeg);
+    background-size: auto;
+    overflow: hidden;
+  
+    height: 100vh;
+    width: 40vw;
+    left: 25vw;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+    background-position: -35vw 50%;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    animation: dd3 10s 2;
+    animation-delay: 4s;
+  }
+  .d4 {
+    position: absolute;
+    overflow: hidden;
+    background-image: url(/images/hiking.jpeg);
+    background-size: auto;
+  
+    height: 80vh;
+    width: 25vw;
+    left: 60vw;
+    background-position: -70vw 50%;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: dd4 10s 2;
+    animation-delay: 4s;
+  }
+  
+  @keyframes dd1 {
+    0% {
+    }
+    50% {
+      width: 95vw;
+    }
+  }
+  @keyframes dd12 {
+    0% {
+    }
+    50% {
+      background-position: Calc(0vw - 40px) 50%;
+    }
+  }
+  @keyframes dd2 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-10vw - 40px) 50%;
+    }
+  }
+  @keyframes dd3 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-35vw - 40px) 50%;
+    }
+  }
+  @keyframes dd4 {
+    0% {
+    }
+    50% {
+      background-position: Calc(-70vw - 40px) 50%;
+    }
+  }
+   */

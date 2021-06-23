@@ -1,17 +1,33 @@
 [{
-	"name": "Mount San Antonio via Baldy Bowl Trail - ",
+	"name": "Mount San Antonio via - Baldy Bowl TrailHead",
 	"location": "https://goo.gl/maps/1q7o6JaD2GrKFdb28",
+    "state":"CA",
 	"difficulty": "3",
 	"length": "8.8",
 	"elevationChange": "3923",
-	"routeType": "Out and Back"
+	"routeType": "Out and Back",
+    "comment": "Last trip on 1/18 trail looks great!"
 },
 
 {
     "name": "Cali mist Trail - Happy Isles Trailhead",
     "location": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "state": "CA",
     "difficulty": "5",
     "length": "7",
     "elevationChange": "2900",
-    "routeType": "Out and Back"
+    "routeType": "Out and Back",
+    "comment": {"name": "Andrew","review":"Last trip on 11/20 trail ICEY cleats!"}
+},
+{
+    "name": "Not cali",
+    "location": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "state": "NV",
+    "difficulty": "5",
+    "length": "7",
+    "elevationChange": "2900",
+    "routeType": "Out and Back",
+    "comment": {"name": "Andrew","review":"Last trip on 11/20 trail ICEY cleats!"}
+
 }]
+

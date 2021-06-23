@@ -4,12 +4,14 @@ const TrailSchema = new mongoose.Schema({
     
         name: String,
         location: String,
+        state: String,
         difficulty: Number,
         length: Number,
         elevationChange: Number,
         routeType: String,
+        comment: Object,
         owner:{
-            type: mongoose.Schema.Types.ObjectId,
+            type: mongoose.Schema.Types,
             ref: 'User', 
         }
 })

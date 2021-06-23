@@ -1,8 +1,27 @@
 <h1>Hey There this is info on <%= trail.name%> </h1>
-<li><%= trail%></li>
-<img src= "<%= trail.location %>" alt="image of map">   
+
+
+
+ <li> Trail: &nbsp <%=  trail.name %>  </li> 
+ <li> Location: &nbsp <%=  trail.location %>  </li> 
+ <li> Difficulty: &nbsp <%=  trail.difficulty %>  </li> 
+ <li> Length of trail: &nbsp<%=  trail.length %>  </li> 
+ <li> Elevation change: &nbsp<%=  trail.elevationChange %>  </li> 
+ <li> Route type: &nbsp <%=  trail.routeType %>  </li> 
+ <li> Recent reviews: &nbsp <%=  trail.comment %>  </li> 
+ 
+ 
+
+  
+  <img src= "/images/Mt. Baldy trail.jpeg" alt="image of map">   
+  
+
+
 <head>
-    <ui style="display: flex; justify-content: space-around"
-      ><a href="/">Home</a></ui
-    >
-  </head>
+    <ul style="display: flex; justify-content: space-around">
+      <!-- <a href="/" class="btn btn-secondary">Home</a> -->
+      <a href="/socal" class="btn btn-secondary">Back</a>
+    </ul>
+</head>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

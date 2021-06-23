@@ -1,11 +1,9 @@
 const Trail = require('../models/trail')
 const User = require('../models/user')
+const Comment = require('../models/comment')
 const trailData = require('./trails.json')
 
 Trail.deleteMany({})
-    .then(()=> {
-        return Trail.insertMany(trailData)
-    })
     .then(() =>{
         return User.create(
             {location:"California", name:"Andrew"}
@@ -19,7 +17,12 @@ Trail.deleteMany({})
     .then( (trails) => {
         return Trail.insertMany(trails)
     })
-    .then(console.log)
+    .then((t) =>{
+        console.log(t,"inhere");
+
+           return Comment.create({name:"Andrew", review: "hhhhaahaha", owner:t[0]._id })
+       
+    })
     .catch(console.error)
     .finally(() => {
         process.exit()

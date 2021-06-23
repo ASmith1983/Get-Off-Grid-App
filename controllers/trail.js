@@ -19,8 +19,8 @@ router.get("/", (req, res) => {
 // index route----GET	read	retrieve data
 router.get('/norcal', (req, res) => {
       // console.log(req.body);
-      Trail.find({})
-      .then((trails) => res.render('norcal',{trails:trails}))
+      Trail.find({state: "CA"})
+      .then((trails) => res.render('socal',{trails:trails}))
       .catch(err => {
           console.log(err);
           res.send("no luck on norcal")
@@ -28,8 +28,8 @@ router.get('/norcal', (req, res) => {
         
 });
 
-router.get('/socal', (req,res) => {
-        Trail.find({})
+router.get('/nv', (req,res) => {
+        Trail.find({state: "NV"})
         .then((trails) => res.render('socal',{trails:trails}))
         .catch(err => {
             console.log(err);
@@ -68,18 +68,56 @@ router.post('/new', (req, res) => {
     })
 })
 
+router.get('/edit/:id', (req,res) =>{
+    let routeId = req.params.id
+    Trail.findById(routeId)
+        .then(trail => 
+            Comment.find({owner: trail._id })
+            .then(comments =>{
+                res.render('edit', {trail, comments})
 
+            })
+        )
+})
 
 
 // // update route----	update	modify existing data
-// router.put('/update/:id', (req,res) => {
+router.put('/update/:id', (req,res) => {
+    let routeId = req.params.id
+    Trail.findByIdAndUpdate(
+        {_id : routeId},
+        {
+            name: req.body.name, 
+            location : req.body.location,
+            difficulty : req.body.difficulty,
+            length : req.body.length,
+            elevationChange : req.body.elevationChange,
+            routeType : req.body.routeType
+        },
+        { new: true}
+        
+    )
+    .then( 
+        // res.render('update', {trail:trail})
+        res.redirect('/socal')
+    )
+    .catch(err => {
+        console.log(err);
+        res.send("no luck on update")
+    })
+    
 
-// })
+})
 
 
 // update specific data route--------	update	modify existing data
 router.patch('update/:id', (req,res) => {
-    res.render('update')
+    // let routeId = req.params.id
+    // Trail.findByIdAndUpdate(
+    //     {_id : routeId},
+
+    // )
+    // res.render('update')
 
 })
 
@@ -94,7 +132,7 @@ router.delete('/delete/:id', (req,res) => {
         res.json({msg: `Id ${routeId} deleted`, trail})
         
     })
-    // .then(res.redirect('/'))
+    .then(res.redirect('/socal'))
     .catch(err => {
         console.log(err);
         res.send("no luck on delete route")
