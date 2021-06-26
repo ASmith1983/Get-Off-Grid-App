@@ -3,13 +3,14 @@ const mongoose = require('../db/connection')
 const TrailSchema = new mongoose.Schema({
     
         name: String,
-        location: String,
+        url: String,
         state: String,
         difficulty: Number,
         length: Number,
         elevationChange: Number,
         routeType: String,
-        comment: Object,
+        img:String,
+
         owner:{
             type: mongoose.Schema.Types,
             ref: 'User', 

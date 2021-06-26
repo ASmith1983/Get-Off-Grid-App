@@ -1,8 +1,7 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
@@ -12,34 +11,53 @@ body{
     font-family: 'Merriweather Sans', sans-serif; 
     color: whitesmoke;
     position: relative;
-    padding: 5%;
+    padding: 0 10%;
     /* min-height: 100vh; */
     background: radial-gradient(ellipse at bottom, #0d1d31 0%,  #0c0d13 100%);
  
 }
 ul{
   display: inline;
-  padding: 3%;
+  padding: 0 3%;
 }
 li{
     display: flex;
     flex-wrap: wrap;
     flex-basis: auto;
-    justify-content: space-evenly;
-    padding: 1%;
-    margin: .5rem 0;
+    justify-content: flex-start;
+    /* padding-left: 17%; */
+    margin:  0 auto;
+    background-color: transparent;
     
 }
+list-group-item {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+
+
+
 img{
   display: grid;
   justify-self: center;
   margin: 0 auto;
+  width: 640px;
+  height: 640px;
+  
 }
 .form-group{
   display: flex;
+  justify-content: space-evenly;
+  /* padding: 1%; */
 }
 
-header{
+/* header{
     background-color: black;
     height: 40rem;
     width: 80%;
@@ -49,13 +67,13 @@ header{
     margin: 0 auto;
     border-radius: 10%;
    
-}
+} */
 h1{
     color: whitesmoke;
-    display: flex;
+    display: inline-flexbox;
     justify-content: center;
     margin: 4rem 0;
-    border-radius: 50%;
+    border-radius: 10%;
    
   
    
@@ -63,9 +81,51 @@ h1{
 footer{
     display: flex;
     justify-content: center;
-    margin: 4rem 0;
-    border-radius: 50%;
+   
+   
 }
+/* div{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  background-color: slategray;
+  padding: 1%;
+  border-radius: 2%;
+  margin-bottom: 1rem;
+
+
+} */
+
+.btn-primary {
+    color: black;
+    background-color: #0d6efd;
+    border-color: #1863d4;
+}
+
+
+.btn-danger {
+    color: black;
+    background-color: indianred;
+    border-color: #dc3545;
+}
+
+element.style {
+  margin-bottom: 1rem;
+}
+.form-group {
+  display: flex;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+  color: auto;
+
+}
+
+
+
+
+
 
 @import '~mdb-ui-kit/css/mdb.min.css';
 

@@ -19,10 +19,20 @@ Trail.deleteMany({})
     })
     .then((t) =>{
         console.log(t,"inhere");
-
-           return Comment.create({name:"Andrew", review: "hhhhaahaha", owner:t[0]._id })
+            return Comment.deleteMany({})
+            .then(() =>{
+                return trailData.map((_t) =>{
+                    console.log(_t.name)
+                    return ({name: _t.comment.name, review: _t.comment.review, owner: t.filter(_ => _.name == _t.name )[0]._id })
+                })
+            })
+            .then((comments) =>{
+                console.log(comments)
+                return Comment.insertMany(comments)
+            })
        
     })
+   
     .catch(console.error)
     .finally(() => {
         process.exit()
