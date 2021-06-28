@@ -1,18 +1,20 @@
-<h1>Create your own comment about the trail</h1>
+
+<h1 style="margin-top: 20%;">Create your own comment about the trail</h1>
 <form action="/commentEdit/<%= comment._id %>/?_method=PUT" method="POST">
  
-    <div class="form-group"> 
-      <label for="CommentEdit"></label>
+    <div class="form-group" style="padding: 2%;"> 
+      <label for="CommentEdit" style="padding: 2%;"></label>
             Name: <input type="text"  name="name" class="form-control" value="<%= comment.name %>"/> 
             Comment: <input type="text"  name="review" class="form-control" value="<%= comment.review %>"/> 
+            Trail id: <input type="text"  name="trail" class="form-control" value="<%= comment.owner %>"/> 
     </div>      
           
         <input type="submit" value="Submit" class="btn btn-danger"/>
         <a href="/newComment" class="btn btn-secondary">Cancel</a> 
 </form> 
-<head>
+<!-- <head>
   <ul style="display: flex; justify-content: space-around; margin-top: 10%;"> 
     <a href="/" class="btn btn-secondary">Home</a> 
   </ul>
-</head>
+</head> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

@@ -1,12 +1,3 @@
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
-
-
 body{
     font-family: 'Merriweather Sans', sans-serif; 
     color: whitesmoke;
@@ -16,10 +7,12 @@ body{
     background: radial-gradient(ellipse at bottom, #0d1d31 0%,  #0c0d13 100%);
  
 }
+
 ul{
   display: inline;
   padding: 0 3%;
 }
+
 li{
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +23,8 @@ li{
     background-color: transparent;
     
 }
-list-group-item {
+
+.list-group-item {
   position: relative;
   display: block;
   padding: .5rem 1rem;
@@ -40,62 +34,26 @@ list-group-item {
   border: 1px solid rgba(0,0,0,.125);
 }
 
-
-
-
 img{
   display: grid;
   justify-self: center;
   margin: 0 auto;
-  width: 640px;
-  height: 640px;
-  
+  /* width: 640px;
+  height: 640px; */
+  width: 100%;
+  height: auto;
 }
-.form-group{
-  display: flex;
-  justify-content: space-evenly;
-  /* padding: 1%; */
-}
-
-/* header{
-    background-color: black;
-    height: 40rem;
-    width: 80%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 10%;
-   
-} */
 h1{
     color: whitesmoke;
-    display: inline-flexbox;
+    display: flex;
     justify-content: center;
     margin: 4rem 0;
-    border-radius: 10%;
-   
-  
-   
+    border-radius: 10px; 
 }
 footer{
     display: flex;
-    justify-content: center;
-   
-   
+    justify-content: center;   
 }
-/* div{
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  background-color: slategray;
-  padding: 1%;
-  border-radius: 2%;
-  margin-bottom: 1rem;
-
-
-} */
-
 .btn-primary {
     color: black;
     background-color: #0d6efd;
@@ -114,15 +72,73 @@ element.style {
 }
 .form-group {
   display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
 div {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  margin: 0 10px;
   color: auto;
-
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  
 }
 
+.container img {
+  width: 100%;
+  height: auto;
+}
 
+.container .btn1 {
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(0%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 5%;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: transparent;
+}
+.container .btn2 {
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(0%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 5%;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: transparent;
+}
+
+.container .btn1:hover {
+  background-color: black;
+  color: white;
+}
+.container .btn2:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav-link{
+  color: whitesmoke;
+  font-size: 18px;
+}
 
 
 
@@ -133,123 +149,12 @@ div {
     @media screen and (max-width: 750px) {
       @content;
     }
-  }
+};
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+};
   
-  /* * {
-    margin: 0;
-    padding: 0;
-    background-color: #2f2f2f;
-  }
-  .main {
-    padding-right: 5%;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-  }
-  .d1 {
-    position: absolute;
-    background-image: url(/images/hiking.jpeg);
-    background-size: auto;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
   
-    height: 30vh;
-    width: 15vw;
-  
-    background-position: 0 50%;
-  
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    animation: dd1 10s 1, dd12 10s 1;
-    animation-delay: 4s, 14s;
-  }
-  .d2 {
-    position: absolute;
-    background-image: url(/images/hiking.jpeg);
-    background-size: auto;
-  
-    height: 50vh;
-    width: 25vw;
-  
-    background-position: -10vw 50%;
-    left: 10vw;
-  
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    animation: dd2 10s 2;
-    animation-delay: 4s;
-  }
-  .d3 {
-    position: absolute;
-    background-image: url(/images/hiking.jpeg);
-    background-size: auto;
-    overflow: hidden;
-  
-    height: 100vh;
-    width: 40vw;
-    left: 25vw;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
-    background-position: -35vw 50%;
-  
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-    animation: dd3 10s 2;
-    animation-delay: 4s;
-  }
-  .d4 {
-    position: absolute;
-    overflow: hidden;
-    background-image: url(/images/hiking.jpeg);
-    background-size: auto;
-  
-    height: 80vh;
-    width: 25vw;
-    left: 60vw;
-    background-position: -70vw 50%;
-  
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    animation: dd4 10s 2;
-    animation-delay: 4s;
-  }
-  
-  @keyframes dd1 {
-    0% {
-    }
-    50% {
-      width: 95vw;
-    }
-  }
-  @keyframes dd12 {
-    0% {
-    }
-    50% {
-      background-position: Calc(0vw - 40px) 50%;
-    }
-  }
-  @keyframes dd2 {
-    0% {
-    }
-    50% {
-      background-position: Calc(-10vw - 40px) 50%;
-    }
-  }
-  @keyframes dd3 {
-    0% {
-    }
-    50% {
-      background-position: Calc(-35vw - 40px) 50%;
-    }
-  }
-  @keyframes dd4 {
-    0% {
-    }
-    50% {
-      background-position: Calc(-70vw - 40px) 50%;
-    }
-  }
-   */

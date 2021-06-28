@@ -1,5 +1,6 @@
 [{
-	"name": "Mount San Antonio via - Baldy Bowl TrailHead",
+	"name": "Mount San Antonio",
+    "trailhead": "Baldy Bowl TrailHead",
 	"url": "https://goo.gl/maps/1q7o6JaD2GrKFdb28",
     "state":"CA",
 	"difficulty": "3",
@@ -11,7 +12,8 @@
 },
 
 {
-    "name": "Cali mist Trail - Happy Isles Trailhead",
+    "name": "Cali Mist Trail",
+    "trailhead": "Happy Isles Trailhead",
     "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
     "state": "CA",
     "difficulty": "5",
@@ -22,19 +24,21 @@
     "img":"/images/caliMIstTrail.jpeg"
 },
 {
-    "name": "Not cali",
+    "name": "Ruby Crest National Recreation Trail",
+    "trailhead": "Ruby Crest Trailhead",
     "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
     "state": "NV",
     "difficulty": "5",
-    "length": "7",
-    "elevationChange": "2900",
-    "routeType": "Out and Back",
-    "comment": {"name": "Bob","review":"None review yet ! "},
-    "img": "/images/hiking.jpeg"
+    "length": "37.7",
+    "elevationChange": "3693",
+    "routeType": "Point to Point",
+    "comment": {"name": "Bob","review":"None review yet! Still on the trail, bring me food please. "},
+    "img": "/images/RubyCrestTrail.jpeg"
 
 },
 {
-    "name": "Bear Lake - CrabTree TrailHead",
+    "name": "Bear Lake",
+    "trailhead":"CrabTree Trailhead",
     "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
     "state": "CA",
     "difficulty": "5",
@@ -44,5 +48,18 @@
     "comment": {"name": "Drew","review":"First time here. Great Fishing!"},
     "img": "/images/morning-bear-lake.jpeg"
 
-}]
+},
+{
+    "name": "Sky High Lakes",
+    "trailhead":"Lover's Camp Trailhead",
+    "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "state": "CA",
+    "difficulty": "5",
+    "length": "13.25",
+    "elevationChange": "1800",
+    "routeType": "Out and Back",
+    "comment": {"name": "Drew","review":"Located within the wonders of the Marble Mountains"},
+    "img": "/images/SkyLakesTrail.jpeg"
+}
+]
 

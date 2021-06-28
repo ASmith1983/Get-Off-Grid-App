@@ -101,6 +101,9 @@ router.post('/newComment', (req, res) => {
         })
       
     })
+    .then(
+        res.redirect("calTrails")
+    )
     .catch(err => {
         console.log(err);
         res.send("no luck on newComment")
@@ -158,15 +161,18 @@ router.put('/commentEdit/:id', (req,res) => {
         {
             name: req.body.name, 
             review: req.body.review
+
         },
         { new: true}
     )
-    .then( 
-        res.render('index')
+    .then( comment => {
+        res.render('newComment', {comment})
+
+    }
     )
     .catch(err => {
         console.log(err);
-        res.send("no luck on update")
+        res.send("no luck on  commentEdit update")
     })
 })
 
@@ -211,7 +217,7 @@ router.delete('/delete/:id', (req,res) => {
         res.json({msg: `Id ${routeId} deleted`, comments})
         
     })
-    .then(res.redirect('/newComment'))
+    .then(res.redirect('/calTrails'))
     .catch(err => {
         console.log(err);
         res.send("no luck on delete for comment route")

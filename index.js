@@ -22,7 +22,7 @@ app.use(cors())
 app.use(methodOverrride('_method'))
 
 app.use('/', trailController)
-app.use('/', commentController)
+app.use('/trail', commentController)
 
 // port set up..
 app.set('port', process.env.PORT || 3000)
@@ -30,3 +30,5 @@ app.set('port', process.env.PORT || 3000)
 app.listen(app.get('port'), ()=> {
     console.log(`Port running on ${app.get('port')}`);
 })
+
+mongodb+srv://asmith:Andoner01@cluster0.xa1zw.mongodb.net/getOffGridApp?retryWrites=true&w=majority

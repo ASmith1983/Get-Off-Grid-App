@@ -3,6 +3,7 @@ const mongoose = require('../db/connection')
 const TrailSchema = new mongoose.Schema({
     
         name: String,
+        trailhead: String,
         url: String,
         state: String,
         difficulty: Number,

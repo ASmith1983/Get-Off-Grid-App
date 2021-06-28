@@ -1,26 +1,52 @@
-<h1>Out of State Trails</h1>
 
-<ul>
-  <% trails.forEach((trail) => { %>
-  <li class="list-group-item d-flex justify-content-between">
-    <div><%= trail.name %></div>
-    <div class="links">
-      <a href="/trail/<%= trail._id %>" class="btn btn-info">View Trail</a> 
+<div style="justify-content: center;">
+  <h1 style="margin-top: 10%;">Out of State Trails</h1>
+</div>
+  <img src="/images/50States-1080x675.jpeg" alt="errorOnImg" style="display: flex; height: 70%; width: 70%; margin-top: 10%; border-radius: 20px;">
+  
+<div>
+    <h2>
+
+      <p style="margin: 5% 20%;">
+        Welcome to Out of State Trails. The United States is full of various trails and regions. Which means this place is loaded with options for outdoor activities especially hiking and backpacking.
+      </p>  
+
+      <p style="margin: 5% 20%;">
+        Some trails even cross into other states and even boarders! Beginning in southern California at the Mexican border, the PCT travels a total distance of 2,650 miles through California, Oregon, and Washington until reaching the Canadian border.
+      </p>
+        
+    </h2>
+</div>
+
+  <ul>
+    <% trails.forEach((trail) => { %>
+    <li style="background-color: transparent; color: white; font-size: 18px;" class="list-group-item d-flex justify-content-between">
+      <div><%= trail.name %></div>
+      <div>Length: &nbsp <%= trail.length %></div>
       
-      <a href="/edit/<%= trail._id %>" class="btn btn-primary">Update Trail</a>  
-     
-      <form action="/delete/<%= trail._id %>/?_method=DELETE" method="POST" class="d-inline">
-          <input type="submit" value="Delete" class="btn btn-danger" />
-      </form>  
-    </div>
-  </li>
-  <% }) %>
-</ul>
+      <div class="links">
+        <a href="/trail/<%= trail._id %>" class="btn btn-info">View Trail</a> 
+        
+        <!-- <a href="/edit/<%= trail._id %>" class="btn btn-primary">Update Trail</a>  
+       
+        <form action="/delete/<%= trail._id %>/?_method=DELETE" method="POST" class="d-inline">
+            <input type="submit" value="Delete" class="btn btn-danger" />
+        </form>   -->
+      </div>
+    </li>
+    <% }) %>
+  </ul>
 
-<ul  style="display:flex;justify-content: space-around;"><a href='/new' class="btn btn-secondary">Add a Trail!</a></ul>
 
 
-<head>
-    <ul style="display:flex;justify-content: space-around;"><a href='/' class="btn btn-secondary">Home</a></ul>
-</head>
+<!-- <ul  style="display:flex;justify-content: space-around;"><a href='/new' class="btn btn-secondary">Add a Trail!</a></ul> -->
+
+<!-- <head>
+
+    <ul style="display:flex;justify-content: space-around;">
+      <a href='/' class="btn btn-secondary">Home</a>
+    </ul>
+
+</head> -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
