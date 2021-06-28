@@ -31,4 +31,3 @@ app.listen(app.get('port'), ()=> {
     console.log(`Port running on ${app.get('port')}`);
 })
 
-mongodb+srv://asmith:Andoner01@cluster0.xa1zw.mongodb.net/getOffGridApp?retryWrites=true&w=majority
