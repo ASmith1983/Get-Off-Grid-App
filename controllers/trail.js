@@ -138,7 +138,6 @@ router.get('/edit/:id', (req,res) =>{
 //     )
 // })
 
-
 router.get('/commentEdit/:id', (req,res) =>{
     let routeId = req.params.id
     Comment.findById(routeId)
@@ -146,9 +145,6 @@ router.get('/commentEdit/:id', (req,res) =>{
                 res.render('commentEdit', {comment: comment})
         })
 })
-
-
-
 
 // // update route----	update	modify existing data
 
@@ -161,7 +157,6 @@ router.put('/commentEdit/:id', (req,res) => {
         {
             name: req.body.name, 
             review: req.body.review
-
         },
         { new: true}
     )
@@ -175,8 +170,6 @@ router.put('/commentEdit/:id', (req,res) => {
         res.send("no luck on  commentEdit update")
     })
 })
-
-
 
 router.put('/update/:id', (req,res) => {
     let routeId = req.params.id
@@ -203,7 +196,6 @@ router.put('/update/:id', (req,res) => {
         res.send("no luck on update for trail update")
     })
     
-
 })
 
 
@@ -225,10 +217,6 @@ router.delete('/delete/:id', (req,res) => {
 })
 
 
-
-
-
-
 router.delete('/delete/:id', (req,res) => {
     let routeId = req.params.id
     Trail.findOneAndDelete(
@@ -244,10 +232,5 @@ router.delete('/delete/:id', (req,res) => {
         res.send("no luck on delete route")
     })   
 })
-
-
-
-
-
 
 module.exports = router 

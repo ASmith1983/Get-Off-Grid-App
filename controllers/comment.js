@@ -15,8 +15,6 @@ router.get("/trail/:id", (req, res) => {
     })
 });
   
-    
-
 
 // post route----- create	add data
 router.get('/newComment', (req,res) =>{
@@ -89,15 +87,6 @@ router.delete('/delete/:id', (req,res) => {
         res.send("no luck on delete route")
     })   
 })
-
-
-
-
-
-
-
-
-
 
 
 module.exports = router 

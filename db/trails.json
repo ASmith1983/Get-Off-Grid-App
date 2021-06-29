@@ -26,7 +26,7 @@
 {
     "name": "Ruby Crest National Recreation Trail",
     "trailhead": "Ruby Crest Trailhead",
-    "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "url": "https://goo.gl/maps/fi2Z9baqk6mUY1P87",
     "state": "NV",
     "difficulty": "5",
     "length": "37.7",
@@ -39,7 +39,7 @@
 {
     "name": "Bear Lake",
     "trailhead":"CrabTree Trailhead",
-    "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "url": "https://goo.gl/maps/8bGKnj3skiDDp31AA",
     "state": "CA",
     "difficulty": "5",
     "length": "10.5",
@@ -52,7 +52,7 @@
 {
     "name": "Sky High Lakes",
     "trailhead":"Lover's Camp Trailhead",
-    "url": "https://goo.gl/maps/JpsKKPfTFVKsgWjH8",
+    "url": "https://goo.gl/maps/hmgmgvEWwxAN5hUA8",
     "state": "CA",
     "difficulty": "5",
     "length": "13.25",
@@ -60,6 +60,30 @@
     "routeType": "Out and Back",
     "comment": {"name": "Drew","review":"Located within the wonders of the Marble Mountains"},
     "img": "/images/SkyLakesTrail.jpeg"
+},
+{
+    "name": "Murray Canyon Trail to Seven Sisters Falls",
+    "trailhead":"Agua Caliente Indian Reservation, Palm Springs, CA",
+    "url": "https://goo.gl/maps/USCpPzcWrLT4Z7tb6",
+    "state": "CA",
+    "difficulty": "3.5",
+    "length": "4",
+    "elevationChange": "600",
+    "routeType": "Out and Back",
+    "comment": {"name": "Billie the Man!","review":"We out here"},
+    "img": "/images/sevensisterwaterfall.jpeg"
+},
+{
+    "name": "Fire Wave Loop",
+    "trailhead":"Parkplatz Fire Wave, Mouse's Tank Rd, Moapa Valley, NV 89040",
+    "url": "https://goo.gl/maps/veM7JFv22Xfzg8cs8",
+    "state": "NV",
+    "difficulty": "2",
+    "length": "3.2",
+    "elevationChange": "393",
+    "routeType": "Loop",
+    "comment": {"name": "Harley","review":"Bring water for the four legged ones"},
+    "img": "/images/fireWave.png"
 }
 ]
 
