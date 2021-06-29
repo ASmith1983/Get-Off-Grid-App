@@ -89,13 +89,19 @@ npm i express ejs cors bootstrap method-override
 Then I created the actual pages in ejs. Using some JavaScript I was able to create a controllers folder with contained all of my RESTFUL routes and provided functionality to my app. 
 
 #
-<br><br>Example Home route:
+<br><br>Controllers folder with RESTFUL Routes:
 <br><br>
           ![This is a alt text.](https://github.com/ASmith1983/Get-Off-Grid-App/blob/ffb8572eaf707bffab39aee765242f64c35fe50f/Img%20and%20gifs/exampleOfCode.png)
 #
 
 ## Final Steps:
 Once I was able to communicate with my database and my route were functioning I used Atlas cloud to store my data and connect it to my backend database.
+
+#
+<br><br>Final product, user adding comments to specific trail:
+<br><br>
+          ![This is a alt text.](https://github.com/ASmith1983/Get-Off-Grid-App/blob/f4aa72583b9ebf8943190793cfa3ed8743893ded/Img%20and%20gifs/getOffGridDemo.gif)
+#
 
 Finally I used Heroku to host my app and deploy my website live to the internet. 
 
