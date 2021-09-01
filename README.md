@@ -80,7 +80,7 @@ Installed Dependencies & Platforms
 #
 
 ## Creating the Layout and Design:
-For this project time constraint was a huge obstacle for me. As soon as I started on the project I decided to keep it simple and focus on functionality and being able to launch. I found get all the dependencies to work and function correctly first and foremost.
+For this project time constraint was a huge obstacle for me. As soon as I started on the project I decided to keep it simple and focus on functionality and being able to launch. I found getting all the dependencies to work and function correctly first and foremost.
 
 ```python
 npm i express ejs cors bootstrap method-override
