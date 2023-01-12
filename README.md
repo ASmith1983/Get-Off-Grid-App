@@ -15,7 +15,7 @@ Putting my new skills with Developing a Backend Database, I was able to create a
 
 ## Process and Thought logic
 
-A critical first step that is to set up some sort of structure and layout for the project and group all m ideas and steps into one location. I found using [trello](https://trello.com/) has really helped with this process.
+A critical first step that is to set up some sort of structure and layout for the project and group all my ideas and steps into one location. I found using [trello](https://trello.com/) has really helped with this process.
 
 One main task was creating a minimum viable product (MVP) and a user story to help create a simplified description of what intended actions I wanted the user to experience.
 
